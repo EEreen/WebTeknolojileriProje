@@ -1,0 +1,155 @@
+.BuyukBaslik {
+    width: 80%;
+    background-color: green;
+    height: 100px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.KucukBaslik {
+    font-size: 30px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+
+.AltBaslik {
+    color: white;
+    font-size: 20px;
+    border: 2px ridge darkblue;
+    width: 15%;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    color: black;
+}
+
+.KonyaSporAmblem {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 12%;
+}
+
+.aciklamaIlk {
+    font-size: 17px;
+}
+
+.anaYapiBaslik {
+    margin: 20px;
+    text-align: left;
+    font-family: cursive;
+    color: darkgreen;
+    letter-spacing: 3px;
+    text-shadow: 1px 2px green;
+}
+
+.resimliYapiAciklama {
+    width: 65%;
+    float: left;
+    font-size: 17px;
+}
+
+.KonyaSporForma {
+    width: 25%;
+    float: right;
+}
+
+.FutbolocuListesi {
+    counter-reset: index;
+    padding: 0;
+    max-width: 300px;
+}
+
+.FutbolocuListesi>li {
+    counter-increment: index;
+    display: flex;
+    align-items: center;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+
+.FutbolocuListesi>li:before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: bold;
+    min-width: 50px;
+    padding-right: 12px;
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background-image: linear-gradient(to bottom, aquamarine, orangered);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.FutbolocuListesi>li+.FutbolocuListesi>li {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.aciklamaSon {
+    content: "";
+    display: table;
+    clear: both;
+    font-size: 17px;
+}
+
+.containerAtaturk {
+    padding: 2px 16px;
+    text-align: center;
+
+}
+
+.cardAtaturk>img {
+    border-radius: 2px 16px;
+    width: 100%;
+}
+
+.containerAtaturk:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardAtaturk {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+    border-radius: 2px 16px;
+    float: left;
+}
+
+.containerYeni {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.cardYeni>img {
+    border-radius: 2px 16px;
+    width: 107%;
+}
+
+.containerYeni:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardYeni {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+    border-radius: 2px 16px;
+    float: right;
+    overflow: hidden;
+}
+
+@media only screen and (max-width:800px){
+    .cardAtaturk{
+        width: 100%;
+    }
+    .cardYeni{
+        width: 100%;
+    }
+}
