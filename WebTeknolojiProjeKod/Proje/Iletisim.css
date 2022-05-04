@@ -1,0 +1,56 @@
+.Anayapi {
+    border-radius: 5px;
+    background-color: lavender;
+    padding: 20px;
+}
+/* #f2f2f2; */
+.CeyrekKisim {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.DigerKisim {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.SatirKisim:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+    .CeyrekKisim,
+    .DigerKisim,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+input[type=text],select,textarea,datalist,input[type=date],input[list="Universite"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }

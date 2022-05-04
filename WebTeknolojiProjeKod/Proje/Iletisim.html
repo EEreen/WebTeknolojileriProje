@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,133 @@
     <title>İletişim</title>
     <link rel="stylesheet" href="../Proje/Iletisim.css">
 </head>
+
 <body>
+
+    <div class="Anayapi">
+        <form action="" method="get">
+            <div class="SatirKisim">
+                <div class="CeyrekKisim">
+                    <label for="isim">Ad</label>
+                </div>
+                <div class="DigerKisim">
+                    <input id="isim" name="Ad" type="text" placeholder="Lütfen adınızı giriniz">
+                </div>
+            </div>
+            <div class="SatirKisim">
+                <div class="CeyrekKisim">
+                    <label for="soyisim">Soyad</label>
+                </div>
+                <div class="DigerKisim">
+                    <input id="soyisim" name="Soyad" type="text" placeholder="Lütfen soyadınızı giriniz">
+                </div>
+            </div>
+            <div class="SatirKisim">
+                <div class="CeyrekKisim">
+                    <label for="email">Email</label>
+                </div>
+                <div class="DigerKisim">
+                    <input id="email" name="Eposta" type="text" placeholder="Lütfen email adresiniz giriniz">
+                </div>
+            </div>
+            <div class="SatirKisim">
+                <div class="CeyrekKisim">
+                    <label for="Erkek Kadin">Cinsiyet</label>
+                </div>
+                <div class="DigerKisim">
+                    <label for="Erkek">Erkek</label>
+                    <input id="Erkek" name="cinsiyet" type="radio">
+                    <label for="Kadin">Kadın</label>
+                    <input id="Kadin" name="cinsiyet" type="radio">
+                </div>
+            </div>
+            <div class="SatirKisim">
+                <div class="CeyrekKisim">
+                    <label for="">Doğum tarihi</label>
+                </div>
+                <div class="DigerKisim">
+                    <input type="date">
+                </div>
+            </div>
+            <div class="SatirKisim">
+                <div class="CeyrekKisim">
+                    <label for="">Ülke</label>
+                </div>
+                <div class="DigerKisim">
+                    <select name="Ulke" id="Ulke">
+                        <option value="Türkiye">Türkiye</option>
+                        <option value="Amerika Birleşik Devletleri">Amerika Birleşik Devletleri</option>
+                        <option value="Fransa">Fransa</option>
+                        <option value="Almanya">Almanya</option>
+                        <option value="İspanya">İspanya</option>
+                        <option value="İngiltere">İngiltere</option>
+                    </select>
+                </div>
+            </div>
+            <div class="SatirKisim">
+                <div class="CeyrekKisim">
+                    <label for="">Eğitim aldığınız üniversite</label>
+                </div>
+                <div class="DigerKisim">
+                    <input list="Universite" name="universite" id="universite" placeholder="Seçiniz">
+                    <datalist id="Universite">
+                        <option value="Sakarya Üniversitesi"></option>
+                        <option value="Sakarya Uygulamalı Bililmler Üniversitesi"></option>
+                        <option value="Kocaeli Ünivesitesi"></option>
+                        <option value="Eskişehir Osmangazi Üniversitesi"></option>
+                        <option value="İstanbul Teknik Üniversitesi"></option>
+                    </datalist>
+                </div>
+            </div>
+            <div class="SatirKisim">
+                <div class="CeyrekKisim">
+                    <label for="">Bildiğiniz yabancı diller</label>
+                </div>
+                <div class="DigerKisim">
+                    <label for="ingilizce">İngilizce</label>
+                    <input id="ingilizce" name="ingilizce" value="ingilizce" type="checkbox">
+                    <label for="almanca">Almanca</label>
+                    <input id="almanca" name="almanca" value="almanca" type="checkbox">
+                    <label for="ispanyolca">İspanyolca</label>
+                    <input id="ispanyolca" name="ispanyolca" value="ispanyolca" type="checkbox">
+                    <label for="fransızca">Fransızca</label>
+                    <input id="fransızca" name="fransızca" value="fransızca" type="checkbox">
+                </div>
+            </div>
+            <div class="SatirKisim">
+                <div class="CeyrekKisim">
+                    <label for="programlamaDilleri">Bildiğiniz programlama dilleri</label>
+                </div>
+                <div class="DigerKisim">
+                    <select  name="programlamaDilleri" id="programlamaDilleri">
+                        <optgroup label="Yapısal Yazılım dilleri">
+                            <option value="Java">Java</option>
+                            <option value="Pascal">Pascal</option>
+                            <option value="Visual Basic ">Visual Basic</option>
+                        </optgroup>>
+                        <optgroup label="Nesneye dayalı Yazılım dilleri">
+                            <option value="Python">Python</option>
+                            <option value="c#">c#</option>
+                            <option value="Php">Php</option>
+                        </optgroup>>
+                    </select>
+                </div>
+            </div>
+            <div class="SatirKisim">
+                <div class="CeyrekKisim">
+                    <label for="yorum">Yorum</label>
+                </div>
+                <div class="DigerKisim">
+                    <textarea name="yorum" id="yorum" cols="30" rows="10" placeholder="Lütfen yazınız...."></textarea>
+                </div>
+            </div>
+            <div class="SatirKisim">
+                <input type="submit" value="Gönder">
+            </div>
+        </form>
+    </div>
+
     <script src="../Proje/Iletisim.js"></script>
 </body>
+
 </html>
