@@ -70,10 +70,6 @@ h2 {
     transform: translate(0px, -10px) scale(1.2);
 }
 
-.descartesResim {
-    height: 100%;
-}
-
 .süslüCizgi0 {
     border: none;
     border-top: 3px double #333;
