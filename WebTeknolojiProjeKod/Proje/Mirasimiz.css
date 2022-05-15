@@ -153,3 +153,232 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width:1400px){
+    .KonyaSporAmblem {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 15%;
+    }    
+}
+
+@media only screen and (max-width:1115px){
+    .KonyaSporAmblem {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 18%;
+    }    
+}
+@media only screen and (max-width:950px){
+    .KonyaSporAmblem {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 22%;
+    }    
+}
+@media only screen and (max-width:775px){
+    .KonyaSporAmblem {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 25%;
+    }    
+}
+@media only screen and (max-width:686px){
+    .KonyaSporAmblem {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 28%;
+    }    
+}
+@media only screen and (max-width:616px){
+    .KonyaSporAmblem {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 31%;
+    }    
+}
+@media only screen and (max-width:552px){
+    .KonyaSporAmblem {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 34%;
+    }    
+}
+@media only screen and (max-width:512px){
+    .KonyaSporAmblem {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 35%;
+    }    
+}
+
+@media only screen and (max-width:800px){
+    .BuyukBaslik {
+        width: 100%;
+        background-color: green;
+        height: 100px;
+        margin: auto;
+        display: block;
+        text-align: left;
+        align-items: center;
+        position: relative;
+    }
+    
+    .KucukBaslik {
+        font-size: 30px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: underline;
+        margin-left: 200px;
+        width: 100%;
+    }
+    
+    .AltBaslik {
+        color: white;
+        font-size: 20px;
+        border: 2px ridge darkblue;
+        width: 15%;
+        text-align: center;
+        margin-left: 200px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        float: left;
+    }        
+}
+
+@media only screen and (max-width:600px){
+    .BuyukBaslik {
+        width: 100%;
+        background-color: green;
+        height: 100px;
+        margin: auto;
+        display: block;
+        text-align: left;
+        align-items: center;
+        position: relative;
+    }
+    
+    .KucukBaslik {
+        font-size: 30px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: underline;
+        margin-left: 150px;
+        width: 100%;
+    }
+    
+    .AltBaslik {
+        color: white;
+        font-size: 20px;
+        border: 2px ridge darkblue;
+        width: 15%;
+        text-align: center;
+        margin-left: 150px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        float: left;
+    }        
+}
+
+@media only screen and (max-width:550px){
+    .BuyukBaslik {
+        width: 100%;
+        background-color: green;
+        height: 100px;
+        margin: auto;
+        display: block;
+        text-align: left;
+        align-items: center;
+        position: relative;
+    }
+    
+    .KucukBaslik {
+        font-size: 30px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: underline;
+        margin-left: 120px;
+        width: 100%;
+    }
+    
+    .AltBaslik {
+        color: white;
+        font-size: 20px;
+        border: 2px ridge darkblue;
+        width: 15%;
+        text-align: center;
+        margin-left: 120px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        float: left;
+    }        
+}
+
+@media only screen and(max-width:800px){
+    .resimliYapiAciklama {
+        width: 65%;
+        float: left;
+        font-size: 17px;
+    }
+    
+    .KonyaSporForma {
+        width: 25%;
+        float: right;
+    }
+    
+    .FutbolocuListesi {
+        counter-reset: index;
+        padding: 0;
+        max-width: 300px;
+    }
+    
+    .FutbolocuListesi>li {
+        counter-increment: index;
+        display: flex;
+        align-items: center;
+        padding: 0 0;
+        box-sizing: border-box;
+    }
+    
+    .FutbolocuListesi>li:before {
+        content: counters(index, ".", decimal-leading-zero);
+        font-size: 1.5rem;
+        text-align: right;
+        font-weight: bold;
+        min-width: 50px;
+        padding-right: 12px;
+        font-variant-numeric: tabular-nums;
+        align-self: flex-start;
+        background-image: linear-gradient(to bottom, aquamarine, orangered);
+        background-attachment: fixed;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .FutbolocuListesi>li+.FutbolocuListesi>li {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+}
+
+
+

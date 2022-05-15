@@ -58,9 +58,11 @@ $programlamaDilleri = filter_input(INPUT_POST, 'programlamaDilleri');
 
 Açıklama: <?php 
 if (isset($_POST['yorum'])) {
-    // Escape any html characters
     echo htmlentities($_POST['yorum']);
 }
+?><br>
+<?php
+echo "<a href=Iletisim.html>Siteye geri dön.</a>";
 ?>
 
 </body>
